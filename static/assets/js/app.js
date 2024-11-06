@@ -1,18 +1,36 @@
 document.addEventListener("DOMContentLoaded", function(e) {
 
     /* menu trigger */
-    const triggerBtn = document.getElementsByClassName("menu-trigger-btn");
-
-    console.log("triggerBtn")
-    console.log(triggerBtn)
+    let triggerBtn = document.getElementsByClassName("menu-trigger-btn");
 
     triggerBtn[0].addEventListener("click", function(e) {
 
-        const triggerArrowDown = triggerBtn[0].getElementsByClassName("bi bi-caret-down-fill");
-        const triggerArrowUp = triggerBtn[0].getElementsByClassName("bi bi-caret-up-fill");
+        let menuToggleIcon = document.getElementById("menu-toggle-icon");
+        let logoIcon = document.getElementById("logo-icon");
+        let mobileMenu = document.getElementById("main-mobile-menu");
 
-        triggerArrowDown[0].style.display = triggerArrowDown[0].style.display === "inline-block" ? "none" : "inline-block"
-        triggerArrowUp[0].style.display = triggerArrowUp[0].style.display === "none" ? "inline-block" : "none"
+        if (triggerBtn[0].style.color === "" | triggerBtn[0].style.color === "black") {
+            triggerBtn[0].style.color = "white";
+        } else {
+            triggerBtn[0].style.color = "black";
+        }
+
+        let fillValue = logoIcon.getAttribute("fill");
+        if (fillValue === null | fillValue === "black") {
+            logoIcon.setAttribute("fill", "white");
+        } else {
+            logoIcon.setAttribute("fill", "black");
+        }
+
+        menuToggleIcon.classList.toggle("bi-caret-down-fill");
+        menuToggleIcon.classList.toggle("bi-caret-up-fill");
+
+        if (mobileMenu.style.display === "" || mobileMenu.style.display === "none") {
+            mobileMenu.style.display = "block";
+        } else {
+            mobileMenu.style.display = "none";
+        }
+
     })
 })
 
