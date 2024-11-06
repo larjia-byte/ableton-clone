@@ -56,25 +56,84 @@ body {
     height: 1.75rem;
 }
 
+.main-menu-trigger {
+    display: block;
+    margin-left: -1rem;
+}
+
+.menu-trigger-btn {
+    position: relative;
+    font-size: 1.25rem;
+    border: 0;
+    background-color: white;
+}
+
+.bi-caret-down-fill {
+    position: absolute;
+    font-size: 0.75rem;
+    top: 0.4rem;
+    margin-left: 0.2rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.bi-caret-up-fill {
+    position: absolute;
+    font-size: 0.75rem;
+    top: 0.4rem;
+    margin-left: 0.2rem;
+    display: none;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .main-menu-trigger {
+        display: none;
+    }
+}
+
 .main-nav-wrapper {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .main-nav-wrapper {
+        /* width: 100%; */
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .main-nav-left {
     display: flex;
-}
-
-.main-nav-left {
     padding-left: 0;
-    font-weight: 500;
-    font-size: 18px;
+    /* font-weight: 500; */
+    /* font-size: 1.125rem; */
 }
 
-.main-nav-left-link {
-    padding: 0 1.4rem;
+@media screen and (min-width: 1270px) {
+    .main-nav-left {
+        font-size: 1.125rem;
+    }
+
+    .main-nav-left-link {
+        padding: 0 1.4rem;
+    }
 }
+
+@media screen and (min-width: 1024px) {
+    .main-nav-left-link {
+        padding: 0 0.75rem;
+    }
+}
+
+/* .main-nav-left-link {
+    padding: 0 1.4rem;
+} */
 
 .main-nav-left-link:first-child {
     padding-left: 0;
@@ -87,12 +146,28 @@ body {
 .main-nav-right {
     display: flex;
     align-items: center;
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
-.main-nav-right-link {
-    padding: 0 1.4rem;
+@media screen and (min-width: 1270px) {
+    .main-nva-right {
+        font-size: 18px;
+    }
+
+    .main-nav-right-link {
+        padding: 0 1.4rem;
+    }
 }
+
+@media screen and (min-width: 1024px) {
+    .main-nav-right-link {
+        padding: 0 0.75rem;
+    }
+}
+
+/* .main-nav-right-link {
+    padding: 0 1.4rem;
+} */
 
 .main-nav-right-link > a {
     color: blue;
