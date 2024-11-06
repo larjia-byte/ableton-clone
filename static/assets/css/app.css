@@ -77,7 +77,7 @@ body {
 .menu-trigger-btn {
     position: relative;
     color: black;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     border: 0;
     background-color: transparent;
     z-index: 1000;
@@ -107,14 +107,15 @@ body {
 
 .main-mobile-menu {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     background-color: #0000FF;
     color: white;
-    padding-top: 65px;
+    padding-top: 68px;
     z-index: 900;
+    overflow-y: scroll;
     transition: all 0.5s ease-in-out;
 }
 
@@ -206,6 +207,58 @@ body {
 .second-nav {
     display: none;
 }
+
+
+
+
+/* ---------------------------------------- Mobile Menu --------------------------------------- */
+.main-mobile-menu-list {
+    margin-left: -10px;
+}
+
+.main-mobile-menu-item {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-mobile-menu-item > a {
+    color: white;
+}
+
+.mobile-login-register {
+    font-size: 1rem;
+}
+
+.mobile-menu-more-title {
+    margin: 0 0 0 30px;
+    font-size: 1.5rem;
+}
+
+.mobile-menu-more-link {
+    margin-left: -10px;
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+.mobile-menu-more-link > a {
+    color: white;
+}
+
+/* .mobile-more-on > h3 {
+    font-size: 1.5rem;
+} */
+
+
+
+/* ---------------------------------------- Mobile Menu --------------------------------------- */
+
+
+
+
+
+
+
 
 /* ---------------------------------------- Home Page --------------------------------------- */
 .homepage-grid {
