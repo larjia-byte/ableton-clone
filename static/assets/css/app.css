@@ -63,6 +63,7 @@ body {
 
 .menu-trigger-btn {
     position: relative;
+    color: black;
     font-size: 1.25rem;
     border: 0;
     background-color: white;
