@@ -313,8 +313,8 @@ body {
 
 /* ---------------------------------------- Latest --------------------------------------- */
 .latest {
-    margin-top: 70px;
-    padding: 0 30px;
+    /* margin-top: 70px; */
+    padding: 30px 30px 0 30px;
 }
 
 .latest-header {
@@ -324,7 +324,7 @@ body {
 }
 
 .latest-header > h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -343,7 +343,11 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .latest {
-        padding: 0 100px;
+        padding: 70px 100px 0 100px;
+    }
+
+    .latest-header > h1 {
+        font-size: 1.8rem;
     }
 
     .latest-header-menu-tablet {
@@ -361,7 +365,11 @@ body {
 
 @media screen and (min-width: 1024px) {
     .latest {
-        padding: 0 100px;
+        padding: 70px 100px 0 100px;
+    }
+
+    .latest-header > h1 {
+        font-size: 1.8rem;
     }
 
     .latest-header-menu {
@@ -400,6 +408,22 @@ body {
     width: 100%;
 }
 
+.latest-category {
+    margin: 0.5rem 0;
+    font-size: 0.75rem;
+}
+
+.latest-category-label {
+    padding: 2px 15px;
+}
+
+.latest-title {
+    font-weight: 550;
+    font-size: 0.75rem;
+    margin-top: 0;
+    padding-bottom: 0.75rem;
+}
+
 @media screen and (min-width: 768px) {
     .latest-content-item,
     .latest-image {
@@ -408,6 +432,11 @@ body {
 
     .latest-content-list {
         flex-direction: row;
+    }
+
+    .latest-category,
+    .latest-title {
+        font-size: 1.25rem;
     }
 }
 
@@ -421,32 +450,25 @@ body {
     .latest-content-list {
         flex-direction: row;
     }
+
+    .latest-category,
+    .latest-title {
+        font-size: 1.25rem;
+    }
 }
 
-.latest-category {
-    margin: 0.5rem 0;
-}
 
-.latest-category-label {
-    padding: 2px 15px;
-}
-
-.latest-title {
-    font-weight: 550;
-    font-size: 18px;
-    margin-top: 0;
-}
 
 /* ---------------------------------------- Latest --------------------------------------- */
 
 /* ---------------------------------------- Move --------------------------------------- */
 .get-move {
-    margin-top: 70px;
+    margin-top: 30px;
     padding: 0 30px;
 }
 
 .get-move-header > h1 {
-    font-size: 40px;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -463,7 +485,18 @@ body {
     width: 100%;
 }
 
+.get-move-title {
+    font-weight: 550;
+    font-size: 0.75rem;
+    margin-top: 0;
+    padding-bottom: 0.75rem;
+}
+
 @media screen and (min-width: 768px) {
+    .get-move-header > h1 {
+        font-size: 1.8rem;
+    }
+
     .get-move {
         padding: 0 100px;
     }
@@ -476,9 +509,17 @@ body {
     .get-move-content-list {
         flex-direction: row;
     }
+
+    .get-move-title {
+        font-size: 1.8rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+    .get-move-header > h1 {
+        font-size: 1.8rem;
+    }
+
     .get-move {
         padding: 0 100px;
     }
@@ -491,6 +532,10 @@ body {
     .get-move-content-list {
         flex-direction: row;
     }
+
+    .get-move-title {
+        font-size: 1.25rem;
+    }
 }
 
 /* .get-move-content-item {
@@ -501,23 +546,20 @@ body {
     width: 420px;
 } */
 
-.get-move-title {
-    font-weight: 550;
-    font-size: 18px;
-    margin-top: 0;
-}
+
 
 /* ---------------------------------------- Move --------------------------------------- */
 
 /* ---------------------------------------- take further --------------------------------------- */
 .take-further {
-    margin-top: 70px;
+    margin-top: 20px;
     margin-bottom: 100px;
     padding: 0 30px;
 }
 
 .take-further-header > h1 {
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -534,7 +576,26 @@ body {
     flex-wrap: wrap;
 }
 
+.take-further-title {
+    font-weight: 550;
+    font-size: 0.75rem;
+    margin-top: 0;
+    padding-bottom: 0.75rem;
+}
+
 @media screen and (min-width: 768px) {
+    .take-further {
+        margin-top: 50px;
+    }
+
+    .take-further-title {
+        font-size: 1.8rem;
+    }
+
+    .take-further-header > h1 {
+        font-size: 1.8rem;
+    }
+
     .take-further {
         padding: 0 100px;
     }
@@ -551,6 +612,18 @@ body {
 
 @media screen and (min-width: 1024px) {
     .take-further {
+        margin-top: 50px;
+    }
+
+    .take-further-title {
+        font-size: 1.8rem;
+    }
+
+    .take-further-header > h1 {
+        font-size: 1.8rem;
+    }
+
+    .take-further {
         padding: 0 100px;
     }
 
@@ -565,11 +638,7 @@ body {
 }
 
 
-.take-further-title {
-    font-weight: 550;
-    font-size: 18px;
-    margin-top: 0;
-}
+
 
 /* ---------------------------------------- take further --------------------------------------- */
 
@@ -609,7 +678,7 @@ body {
 }
 
 .footer-content-header {
-    font-size: 40px;
+    font-size: 1rem;
 }
 
 .footer-row-1 {
@@ -620,6 +689,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    .footer-content-header {
+        font-size: 1.8rem;
+    }
+
     .footer-row-1 {
         flex-direction: row;
     }
@@ -641,6 +714,10 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+    .footer-content-header {
+        font-size: 1.8rem;
+    }
+
     .footer-row-1 {
         flex-direction: row;
     }
